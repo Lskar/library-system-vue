@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  管理员控制台
+  登入
 </template>
 
 <style scoped>

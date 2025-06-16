@@ -65,7 +65,8 @@
         
         <el-main>
           
-          right
+          <!-- 主体内容 -->
+          <router-view></router-view>
 
         </el-main>
       </el-container>
