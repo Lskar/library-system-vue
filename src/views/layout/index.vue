@@ -23,36 +23,35 @@
         <el-aside width="200px" class="aside">
           <!-- 左侧菜单栏 -->
 
-          <el-menu>
+          <el-menu router = "true">
             
-            <el-menu-item index="0">
+            <el-menu-item index="/index">
               <el-icon><Monitor /></el-icon> 首页
             </el-menu-item>
 
-            <el-sub-menu index="1">
+            <el-sub-menu index="/manage">
               <template #title>
                 <el-icon><User /></el-icon> 用户管理
               </template>
               <el-menu-item-group>
-                <el-menu-item index="1-1">用户信息</el-menu-item>
-                <el-menu-item index="1-2">借阅管理</el-menu-item>
+                <el-menu-item index="/reader">用户信息</el-menu-item>
+                <el-menu-item index="/record">借阅管理</el-menu-item>
               </el-menu-item-group>
             </el-sub-menu>
-            <el-sub-menu index="2"> 
+            <el-sub-menu index="/manageBook"> 
               <template #title>
                 <el-icon><Tickets /></el-icon> 书籍管理
               </template>
               <el-menu-item-group>
-                <el-menu-item index="2-1">图书管理</el-menu-item>
+                <el-menu-item index="/book">图书管理</el-menu-item>
               </el-menu-item-group>
             </el-sub-menu>
-            <el-sub-menu index="3">
+            <el-sub-menu index="sysytem">
               <template #title>
                 <el-icon><Setting /></el-icon> 系统设置
               </template>
               <el-menu-item-group>
-                <el-menu-item index="3-1">系统配置</el-menu-item>
-                <el-menu-item index="3-2">日志管理</el-menu-item>
+                <el-menu-item index="/administrator">管理员控制</el-menu-item>
               </el-menu-item-group>
             </el-sub-menu>
           </el-menu>
